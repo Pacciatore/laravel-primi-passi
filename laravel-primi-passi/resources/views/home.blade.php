@@ -1,7 +1,7 @@
 @php
     $pages = [
         [
-            'name' => 'Privacy & Policies',
+            'name' => 'Privacy Policies',
             'path' => '/privacy',
         ],
         [
