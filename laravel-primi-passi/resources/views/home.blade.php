@@ -1,25 +1,3 @@
-@php
-    $pages = [
-        [
-            'name' => 'Privacy Policies',
-            'path' => '/privacy',
-        ],
-        [
-            'name' => 'Contact Us',
-            'path' => '/contact',
-        ],
-        [
-            'name' => 'About Us',
-            'path' => '/about',
-        ],
-        [
-            'name' => 'Impostazioni',
-            'path' => '/settings',
-        ],
-    ];
-
-@endphp
-
 <!DOCTYPE html>
 <html lang="it">
 
@@ -32,15 +10,9 @@
 
 <body>
 
+    @include('header')
+
     <h1>Questa è l'homepage</h1>
-
-    <ul class="page-links">
-
-        @foreach ($pages as $page)
-            <li> <a href="{{ $page['path'] }}">{{ $page['name'] }}</a> </li>
-        @endforeach
-
-    </ul>
 
 </body>
 
